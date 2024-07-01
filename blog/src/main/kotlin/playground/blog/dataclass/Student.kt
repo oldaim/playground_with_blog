@@ -1,8 +1,11 @@
-package org.toy.playground.dataclass
+package playground.blog.dataclass
 
-data class StudentDataClass(
+class Student(
     val name: String,
     val age: Int,
     val grade: Int,
     val score: Int
 )
+{
+
+}

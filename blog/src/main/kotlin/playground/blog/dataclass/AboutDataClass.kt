@@ -1,4 +1,4 @@
-package org.toy.playground.dataclass
+package playground.blog.dataclass
 
 fun main() {
 
