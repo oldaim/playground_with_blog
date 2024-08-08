@@ -1,5 +1,8 @@
 package playground.codetest;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class leetcode26 {
 
     /*
@@ -8,16 +11,34 @@ public class leetcode26 {
     * */
 
     public static void main(String[] args) {
+        int [] nums = {0,0,1,1,1,2,2,3,3,4};
+
+        int k = removeDuplicates(nums);
+
+        System.out.println(k);
+    }
+
+     public static int removeDuplicates(int[] nums) {
+
+        int end = 0;
+        int count = 1;
+        int current = nums[end];
+        int[] copyNums = Arrays.copyOf(nums, nums.length);
+
+        while (end < nums.length - 1){
+
+            if (copyNums[end + 1] != current){
+                nums[count] = copyNums[end + 1];
+                count++;
+                current = copyNums[end + 1];
+            }
+            end++;
+
+        }
+
+        return count;
 
     }
 
-
-    public static int removeDuplicates(int[] nums) {
-
-
-        while ()
-
-
-    }
 
 }
