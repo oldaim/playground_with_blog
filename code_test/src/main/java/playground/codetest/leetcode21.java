@@ -12,7 +12,7 @@ public class leetcode21 {
         mergeTwoLists(null, new ListNode(0, null));
     }
 
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public static void mergeTwoLists(ListNode list1, ListNode list2) {
 
         ListNode startNode = null;
         if (list1 == null && list2 != null) {
@@ -63,8 +63,6 @@ public class leetcode21 {
         }
 
 
-
-        return startNode;
     }
 
 }
